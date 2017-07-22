@@ -1,5 +1,6 @@
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
+import { Injectable} from '@angular/core';
 
 export class WebService{
     constructor(private http:Http){}
