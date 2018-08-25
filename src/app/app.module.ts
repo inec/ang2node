@@ -1,14 +1,18 @@
-import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MessagesComponent } from './messages-component';
-import { MaterialModule } from '@angular/material';
-import { AppComponent }  from './app.component';
-import { WebService }  from './web.service';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 
 @NgModule({
-  imports:      [ BrowserModule, MaterialModule ],
-  declarations: [ AppComponent, MessagesComponent ],
-  bootstrap:    [ AppComponent ],
-  providers: [ WebService]
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
